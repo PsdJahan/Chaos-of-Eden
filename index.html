@@ -36,6 +36,7 @@
             height: auto;
             z-index: -1; /* Send video behind text */
             transform: translate(-50%, -50%); /* Center video */
+            object-fit: cover; /* Cover the entire container */
         }
 
         h1 {
@@ -70,7 +71,7 @@
     </style>
 </head>
 <body>
-    <video autoplay muted loop>
+    <video autoplay muted loop playsinline>
         <source src="videos/chaos.mp4" type="video/mp4"> <!-- Update with your video path -->
         Your browser does not support the video tag.
     </video>
