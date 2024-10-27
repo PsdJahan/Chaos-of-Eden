@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Coming Soon</title>
     <style>
         @font-face {
@@ -26,13 +26,12 @@
             overflow: hidden; /* Hide overflow */
         }
 
-        video {
-            position: absolute;
+        .video-background {
+            position: fixed; /* Keep the video fixed */
             top: 50%;
             left: 50%;
-            min-height: 100vh;
-            width: 100vw;
-            height: auto;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
             z-index: -1; /* Send video behind text */
             transform: translate(-50%, -50%); /* Center video */
             object-fit: cover; /* Cover the entire container */
