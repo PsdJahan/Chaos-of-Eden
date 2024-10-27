@@ -26,15 +26,16 @@
             overflow: hidden; /* Hide overflow */
         }
 
-        .video-background {
-            position: fixed; /* Keep the video fixed */
-            top: 50%; /* Center the video */
-            left: 50%; /* Center the video */
-            min-width: 100%; /* Ensure it covers full width */
-            min-height: 100%; /* Ensure it covers full height */
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw; /* Full viewport width */
+            height: auto; /* Maintain aspect ratio */
+            min-height: 100vh; /* Minimum height to cover viewport */
             z-index: -1; /* Send video behind text */
             transform: translate(-50%, -50%); /* Center video */
-            object-fit: cover; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the entire container */
         }
 
         h1 {
